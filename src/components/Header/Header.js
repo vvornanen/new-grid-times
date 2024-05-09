@@ -54,7 +54,7 @@ const SuperHeader = styled.div`
   background: var(--color-gray-900);
   color: white;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: none;
   }
 `;
@@ -89,7 +89,7 @@ const MainHeader = styled(MaxWidthWrapper)`
     margin-block-end: 72px;
   }
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     justify-content: space-between;
     margin-block-start: 16px;
     margin-block-end: 72px;
@@ -99,7 +99,7 @@ const MainHeader = styled(MaxWidthWrapper)`
 const DesktopNav = styled.nav`
   display: none;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: revert;
   }
 `;
@@ -107,7 +107,7 @@ const DesktopNav = styled.nav`
 const DesktopUserActions = styled.div`
   display: none;
 
-  @media ${QUERIES.desktopAndUp} {
+  @media ${QUERIES.laptopAndUp} {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
