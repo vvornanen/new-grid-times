@@ -121,6 +121,7 @@ const TextLink = styled.a`
   font-size: ${14 / 16}rem;
   font-style: italic;
   color: var(--color-gray-900);
+  text-decoration: underline;
 `;
 
 export default Header;
