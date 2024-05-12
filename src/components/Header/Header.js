@@ -40,10 +40,12 @@ const Header = () => {
           </ActionGroup>
         </DesktopNav>
         <Logo />
-        <DesktopUserActions>
-          <Button>Subscribe</Button>
-          <TextLink href="/login">Already a subscriber?</TextLink>
-        </DesktopUserActions>
+        <DesktopUserActionsWrapper>
+          <DesktopUserActions>
+            <Button>Subscribe</Button>
+            <TextLink href="/login">Already a subscriber?</TextLink>
+          </DesktopUserActions>
+        </DesktopUserActionsWrapper>
       </MainHeader>
     </header>
   );
@@ -100,7 +102,21 @@ const DesktopNav = styled.nav`
   display: none;
 
   @media ${QUERIES.laptopAndUp} {
-    display: revert;
+    display: block;
+    flex: 1;
+  }
+`;
+
+const DesktopUserActionsWrapper = styled.div`
+  display: none;
+
+  @media ${QUERIES.laptopAndUp} {
+    display: flex;
+    flex: 1;
+    align-self: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 `;
 
@@ -110,7 +126,6 @@ const DesktopUserActions = styled.div`
   @media ${QUERIES.laptopAndUp} {
     display: flex;
     flex-direction: column;
-    align-self: flex-end;
     align-items: center;
     gap: 8px;
   }
