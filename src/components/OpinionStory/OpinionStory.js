@@ -19,6 +19,7 @@ const OpinionStory = ({ id, title, author, avatar }) => {
 const Wrapper = styled.article`
   color: var(--color-gray-900);
   display: flex;
+  gap: 8px;
   flex-direction: row-reverse;
   justify-content: space-between;
 
