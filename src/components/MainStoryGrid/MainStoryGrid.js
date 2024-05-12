@@ -118,6 +118,7 @@ const OpinionStoryListItem = styled.div`
   @media ${QUERIES.tabletOnly} {
     padding: 0;
     margin: 0;
+    flex: 1;
 
     &:not(:last-of-type) {
       border-bottom: none;
