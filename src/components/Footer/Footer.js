@@ -181,11 +181,7 @@ const MainNavArea = styled.div`
   @media ${QUERIES.tabletAndUp} {
     text-align: start;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-
-  @media ${QUERIES.laptopAndUp} {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 `;
 
